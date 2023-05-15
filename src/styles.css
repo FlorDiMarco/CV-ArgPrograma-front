@@ -52,10 +52,18 @@
     #5ffbf1
   );
 }
+.text-gradient {
+  
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;  
+
+}
 h1 {
   margin-bottom: 5rem;
+  
 }
 
 p {
-  font-family: "poppins";
+  font-family: "poppins" , sans-serif;
 }

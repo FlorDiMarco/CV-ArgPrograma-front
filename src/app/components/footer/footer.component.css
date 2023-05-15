@@ -1,6 +1,10 @@
 .row {
-  background-color: var(--background);
+  background-color: #1b1d28;;
 }
 footer {
   color: var(--text-title);
+}
+p{
+  font-size: 1.1rem;
+  font-weight: 700;
 }
