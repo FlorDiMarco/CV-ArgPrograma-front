@@ -1,0 +1,6 @@
+.row {
+  background-color: var(--background);
+}
+footer {
+  color: var(--text-title);
+}

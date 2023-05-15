@@ -1,0 +1,27 @@
+<div class="row g-0 justify-content-around align-items-lg-center">
+  <div class="col">
+    <img src="../../../assets/arg-prog.png" alt="logo argentina programa" />
+  </div>
+  <div class="col d-flex justify-content-end align-items-center mx-4">
+    <a href=""><fa-icon [icon]="icongithub"></fa-icon></a>
+    <a href=""><fa-icon [icon]="iconlinkedin"></fa-icon></a>
+    <button
+      type="button"
+      class="btn btn-primary btn-sm"
+      (click)="login()"
+      *ngIf="!isLogged"
+    >
+      Ingresar
+    </button>
+    <button
+      type="button"
+      class="btn btn-primary btn-sm"
+      (click)="login()"
+      *ngIf="isLogged"
+    >
+      Salir
+    </button>
+  </div>
+</div>
+
+<app-banner class="row g-0"></app-banner>

@@ -1,0 +1,11 @@
+p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: var(--text-title);
+}
+h1 {
+  color: var(--text-title);
+}
+.experience {
+  background-color: var(--background);
+}

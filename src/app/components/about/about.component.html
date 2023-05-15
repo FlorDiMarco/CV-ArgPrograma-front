@@ -1,0 +1,28 @@
+<div class="justify-content-center about">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+    <img
+      src="{{ persona.img }}"
+      alt="avatar"
+      class="img-fluid rounded-circle avatar"
+    />
+    <p>{{ persona.nombre }} {{ persona.apellido }}</p>
+    <p>Full Stack Developer Jr</p>
+  </div>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 px-5 pb-5">
+    <span>
+      <h1>Acerca de mi</h1>
+      <p>
+        {{ persona.descripcion }}
+      </p>
+    </span>
+  </div>
+  <button
+    type="button"
+    class="btn btn-primary"
+    routerLink="/editarabout/1"
+    *nhIf="isLogged"
+  >
+    Editar
+  </button>
+</div>

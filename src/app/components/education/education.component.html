@@ -1,0 +1,36 @@
+<div
+  class="row justify-content-center align-items-center g-0 px-5 py-5 education"
+>
+  <h1>Educacion</h1>
+  <div class="col-lg-2">
+    <button
+      type="button"
+      class="btn btn-dark"
+      routerLink="/nuevaedu"
+      *ngif="Islogged"
+    >
+      nueva educacion
+    </button>
+  </div>
+  <div class="col-lg-1"></div>
+  <div class="col-lg-11">
+    <table class="table">
+      <tbody>
+        <tr *ngFor="let Educacion of education">
+          <td>{{ Educacion.nombreE }}</td>
+          <td>{{ Educacion.descripcionE }}</td>
+          <td *ngIf="isLogged">
+            <button class="btn" routerLink="/editedu/{{ Educacion.id }}">
+              <fa-icon [icon]="iconEdit"></fa-icon>
+            </button>
+          </td>
+          <td *ngIf="isLogged">
+            <button class="btn btn-danger" (click)="delete(Educacion.id)">
+              <fa-icon [icon]="iconBorrar"></fa-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
